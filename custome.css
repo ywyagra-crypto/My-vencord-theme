@@ -1,4 +1,4 @@
-/**
+**
  * @name          Custom Addons
  * @version       1.0
  * @description   Custom Addons
@@ -7,7 +7,7 @@
 @import url(https://raw.githubusercontent.com/NSPC911/vencord-themes/refs/heads/main/RefreshedSeamlessChatBar.theme.css);
 @import url(https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/Extras/ModernIndicators.css);
 @import url(https://davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
-@import url(https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactButtons.css);
+@import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactButtons.css');
 @import url("https://minidiscordthemes.github.io/Snippets/MinimalSearchbar/main.css");
 @import url(https://nspc911.github.io/vencord-themes/ChatBubblesKinda.theme.css);
 @import url(https://davart154.github.io/Themes/Snippets/Plugin%20Icon%20Consistency/IconConsistencySource.css);
@@ -16,27 +16,93 @@
 @import url(https://dmods.a35hie.me/MoreRoundedCorners.css);
 @import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-memberlist.css);
 @import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-search-button.css);
-@import url(https://davart154.github.io/Themes/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css);
 @import url(https://raw.githubusercontent.com/nvhhr/discordcss/refs/heads/main/snippets/dashless-extended.theme.css);
 @import url(https://raw.githubusercontent.com/fevegit/NoCameraMirror/refs/heads/main/NoCameraMirror.theme.css);
 @import url("https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/BubbleUsernames/import.css");
-@import url("https://raw.githubusercontent.com/squairdev/ComiCord/refs/heads/main/ComiCord.css");
-@import url(https://raw.githubusercontent.com/akrossu/SimpleAndClean/refs/heads/main/src/mica.css);
-@import url(https://raw.githubusercontent.com/akrossu/SimpleAndClean/refs/heads/main/src/sidebar.css);
-@import url(https://raw.githubusercontent.com/akrossu/SimpleAndClean/refs/heads/main/src/chat.css);
-@import url(https://raw.githubusercontent.com/akrossu/SimpleAndClean/refs/heads/main/src/window.css);
-@import url(https://raw.githubusercontent.com/akrossu/SimpleAndClean/refs/heads/main/src/settings.css);
 @import url(https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/NSFWtag.css);
 @import url(https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/refs/heads/main/ThreadChannelRecolor.css);
 @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
+@import url('https://codeberg.org/flak/css1/raw/branch/main/vcSnippets/persistMessageHoverHighlightDespiteReduceMotion.css');
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Composer/ManaComposerSource.css);
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Friend%20List/ManaFriendListSource.css);
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Guild/ManaGuildSource.css);
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Media/ManaMediaSource.css);
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css);
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Panel/ManaPanelSource.css);
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Profile/ManaProfileSource.css);
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Sidebar%20Notice/ManaSidebarNoticeSource.css);
+@import url("https://raw.githubusercontent.com/acheronx0577/Better-Transparent-Gif-Emoji-Sticker-Picker/refs/heads/main/Better-Transparent-Gif-Emoji-Sticker-Picker.css");
 
-:root { /* App Wallpaper */
-    --app-bg-url: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fb93c119-990c-44eb-8d9d-2f4f26c64bec/dm6y3e1-3f7d309e-dd03-4143-9cd1-dfec16a933f0.png/v1/fill/w_1078,h_741,q_70,strp/twilight_s_reign_by_blitsazalisdash_dm6y3e1-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMyMCIsInBhdGgiOiIvZi9mYjkzYzExOS05OTBjLTQ0ZWItOGQ5ZC0yZjRmMjZjNjRiZWMvZG02eTNlMS0zZjdkMzA5ZS1kZDAzLTQxNDMtOWNkMS1kZmVjMTZhOTMzZjAucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ImYYDcjMLxqA-UPU3GVjv7mtMec-LkUMyAlUl_X1Lk0");
-  
+/*Limit Modal v2 to Modal v1 Width of 600px*/
+[class^="layoutContainer"] {
+    max-width: 600px;
 }
 
-    /* ========================= MICA SETTINGS ========================= */
-    --app-bg-brightness: 40%;
-    --panel-rgb: rgba(0, 0, 0, 0.05);
+.user-profile-modal-v2 {
+    /*Disable Widgets*/
+    [id^="widgets"], [role^="tablist"] {
+        display: none;
+    }
 
+    /*Modal v1-ify Profile Content*/
+    [class*="profileContentInner"] {
+        --custom-modal-v2-padding: var(--space-0);
+        
+        [class^="profile"] {
+            width: 100%;
+            border-radius: var(--radius-lg); 
+            
+            [class*="profileHeaderBanner"] {
+                border-radius: 0 !important;
+                
+                [class^="editButton"] {
+                    inset-inline-end: var(--space-48);
+                }
+            }
+        }
+    }
 
+    /*Fix Profile Frame Scale*/
+    [class^="profileFrame"] {
+        width: 103% !important;
+    }
+}
+
+/*Remove Nitro Upsells from Modal v2*/
+#user-profile-editing-panel {
+    [class^="floatingFooter"], [class^="guildProfileUpsell"], [class^="premium"], [class^="expressiveWrapper"] {
+        display: none;
+    }
+}
+
+/* Custom User, Mail & Number */
+/* .container__75920[data-nav-anchor-key='account_info_username_setting'] { */
+  /* .stack_dbd263>.text-md\/medium_cf4812 { */
+    /* font-size: 0; */
+    /* &::before {content: '202174190558642177'; font-size: 1rem;} */
+  /* } */
+/* } */
+.container__75920[data-nav-anchor-key='account_info_email_setting'] {
+  .stack_dbd263>.text-md\/medium_cf4812 {
+    font-size: 0;
+    &::before {content: '***************@gmail.com'; font-size: 1rem;}
+  }
+}
+.container__75920[data-nav-anchor-key='account_info_phone_setting'] {
+  .stack_dbd263>.text-md\/medium_cf4812 {
+    font-size: 0;
+    &::before {content: '************8784'; font-size: 1rem;}
+  }
+}
+/* Fully Censor */
+/* .container__75920[data-nav-anchor-key='account_info_username_setting'], */
+.container__75920[data-nav-anchor-key='account_info_email_setting'],
+.container__75920[data-nav-anchor-key='account_info_phone_setting'] {
+  .stack_dbd263>.text-md\/medium_cf4812 {-webkit-text-security: disc;}
+}
+
+/* Hide window buttons when Settings modal is visible */
+body:has([data-mana-component="modal"]) .c38106a3f0c3ca76-winButtons,
+body:has([role="dialog"]) .c38106a3f0c3ca76-winButtons {
+    display: none !important;
+}
