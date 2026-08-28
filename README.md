@@ -1,0 +1,27 @@
+the themes
+
+@import url(https://raw.githubusercontent.com/NSPC911/vencord-themes/refs/heads/main/RefreshedSeamlessChatBar.theme.css);
+@import url(https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/Extras/ModernIndicators.css);
+@import url(https://davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
+@import url(https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactButtons.css);
+@import url("https://minidiscordthemes.github.io/Snippets/MinimalSearchbar/main.css");
+@import url(https://nspc911.github.io/vencord-themes/ChatBubblesKinda.theme.css);
+@import url(https://davart154.github.io/Themes/Snippets/Plugin%20Icon%20Consistency/IconConsistencySource.css);
+@import url(https://davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
+@import url(https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/UserActivityRedesign/import.css);
+@import url(https://dmods.a35hie.me/MoreRoundedCorners.css);
+@import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-memberlist.css);
+@import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-search-button.css);
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css);
+@import url(https://raw.githubusercontent.com/nvhhr/discordcss/refs/heads/main/snippets/dashless-extended.theme.css);
+@import url(https://raw.githubusercontent.com/fevegit/NoCameraMirror/refs/heads/main/NoCameraMirror.theme.css);
+@import url("https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/BubbleUsernames/import.css");
+@import url("https://raw.githubusercontent.com/squairdev/ComiCord/refs/heads/main/ComiCord.css");
+@import url(https://raw.githubusercontent.com/akrossu/SimpleAndClean/refs/heads/main/src/mica.css);
+@import url(https://raw.githubusercontent.com/akrossu/SimpleAndClean/refs/heads/main/src/sidebar.css);
+@import url(https://raw.githubusercontent.com/akrossu/SimpleAndClean/refs/heads/main/src/chat.css);
+@import url(https://raw.githubusercontent.com/akrossu/SimpleAndClean/refs/heads/main/src/window.css);
+@import url(https://raw.githubusercontent.com/akrossu/SimpleAndClean/refs/heads/main/src/settings.css);
+@import url(https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/NSFWtag.css);
+@import url(https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/refs/heads/main/ThreadChannelRecolor.css);
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
