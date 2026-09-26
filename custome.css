@@ -1,79 +1,195 @@
 /**
- * @name          Custom Addons Beta
+ * @name          Custom Theme
  * @version       1.0
- * @description   Custom Addons Beta
+ * @description   Custom theme
  */
 
-@import url(https://raw.githubusercontent.com/NSPC911/vencord-themes/refs/heads/main/RefreshedSeamlessChatBar.theme.css);
-@import url(https://raw.githubusercontent.com/BIurple/VC-Themes/refs/heads/main/Extras/ModernIndicators.css);
-@import url(https://davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
-@import url(https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactButtons.css');
-@import url(https://minidiscordthemes.github.io/Snippets/MinimalSearchbar/main.css);
-@import url(https://nspc911.github.io/vencord-themes/ChatBubblesKinda.theme.css);
-@import url(https://davart154.github.io/Themes/Snippets/Plugin%20Icon%20Consistency/IconConsistencySource.css);
-@import url(https://davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
-@import url(https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/UserActivityRedesign/import.css);
-@import url(https://dmods.a35hie.me/MoreRoundedCorners.css);
-@import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-memberlist.css);
-@import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-search-button.css);
-@import url(https://raw.githubusercontent.com/nvhhr/discordcss/refs/heads/main/snippets/dashless-extended.theme.css);
-@import url(https://raw.githubusercontent.com/fevegit/NoCameraMirror/refs/heads/main/NoCameraMirror.theme.css);
-@import url(https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/BubbleUsernames/import.css");
-@import url(https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/NSFWtag.css);
-@import url(https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/refs/heads/main/ThreadChannelRecolor.css);
-@import url(https://codeberg.org/flak/css1/raw/branch/main/vcSnippets/persistMessageHoverHighlightDespiteReduceMotion.css);
-@import url(https://raw.githubusercontent.com/acheronx0577/Better-Transparent-Gif-Emoji-Sticker-Picker/refs/heads/main/Better-Transparent-Gif-Emoji-Sticker-Picker.css);
-@import url(https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Audio%20Refresh/AudioRefreshSource.css);
-@import url(https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
-@import url(https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Context%20Icons/ContextIconsSource.css);
-@import url(https://raw.githubusercontent.com/EPOS05/cleaner-discord-theme/refs/heads/main/snippets/Fuck%20Activity%20Status.css);
-@import url(https://raw.githubusercontent.com/nvhhr/discordcss/refs/heads/main/snippets/bordercleanup.theme.css);
-@import url(https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/hideGlobalDiscovery.css);
-@import url(https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/Channel%26RolesRecolor.css);
-@import url(https://nspc911.github.io/vencord-themes/SettingsModal.theme.css);
-@import url(https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Composer/ManaComposerSource.css);
-@import url(https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css);
-@import url(https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Panel/ManaPanelSource.css);
-@import url(https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Profile/ManaProfileSource.css);
-@import url(https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/BubbleUsernames/import.css);
-@import url(https://raw.githubusercontent.com/Nightwielder23/discord-fluidui/refs/heads/master/discord-fluidui.theme.css);
-@import url(https://raw.githubusercontent.com/r480github/Basalt-DC/refs/heads/main/basalt.css);
-@import url(https://raw.githubusercontent.com/DiscordStyles/HorizontalServerList/deploy/HorizontalServerList.theme.css);
-
-
-
+@import url(https://raw.githubusercontent.com/ywyagra-crypto/My-vencord-theme/refs/heads/main/Assets%20combo.css);
 
 :root {
-  /* Change your wallpaper here */
-  /* works best with darker background*/
+  /* Background image variables */
+  --background-image: url(https://pbs.twimg.com/media/GjQdi7OXQAEYrDg?format=jpg&name=4096x4096); /* Main background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --background-image-blur: 0px; /* Blur intensity of --background-image | Must end in px | DEFAULT: 5px */
+  --background-image-size: cover; /* Size of the background image | DEFAUT: cover | OPTIONS: cover, contain */
+  --background-image-position: center; /* Position of background image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
 
-  --bg-image: url(https://static1.e621.net/data/be/d9/bed99dc4db3bd3db5b596c29ae59133b.jpg);
-  --bg-size: cover;
-  --bg-position: center;
-  --bg-blur: 0px;
-  --bg-brightness: 0.5;
-  --tint: 0, 0, 0;
-  --tint-app: 0;
-  --tint-panels: 0.3;
-  --glass: rgba(var(--tint), 0.36);
-  --glass-heavy: rgba(var(--tint), 0.63);
-  --shadow-pop: 0 10px 41px 5px rgba(var(--tint), 0.5);
+  /* Popout & Modal variables */
+  --popout-modal-image: var(--background-image); /* Background image for popouts and modals | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --popout-modal-blur: 5px; /* Blur intensity of --popout-modal-image | Must end in px | DEFAULT: 5px */
+  --popout-modal-size: cover; /* Size of the popout/modal image | DEFAUT: cover | OPTIONS: cover, contain */
+  --popout-modal-position: center; /* Position of popout/modal image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
 
-  /*blur*/
-  --blur-sm: 0px;
-  --blur-lg: 0px;
+  /* Home image variables */
+  --home-button-image: url(https://static1.e621.net/data/d6/ae/d6aebad812adfca7c8eee0aa9d871d3e.jpg); /* Home button image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --home-button-size: cover; /* Size of the home button image | DEFAUT: cover */
+  --home-button-position: center; /* Position of home button image | DEAFULT: center */
 
-  /*mentions*/
-  --accent: 248, 248, 248;
-  --mention-fill: rgba(var(--accent), 0.14);
-  --mention-fill-hover: rgba(var(--accent), 0.08);
-  --mention-bar: rgba(var(--accent), 0.97);
+  /* Brightness variables */
+  --serverlist-brightness: 0.6; /* Brightness for serverlist | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
+  --left-brightness: 0.5; /* Channels and DM list brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
+  --middle-brightness: 0.4; /* Chat brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.6 */
+  --right-brightness: 0.5; /* Members and Now Playing brightness | 0 - 1 (decimals allowed) | DEFAULT: 0 */
+  --popout-modal-brightness: 0.5; /* Brightness for popouts and modals | 0 - 1 (decimals allowed) | DEFAULT: 0.75 */
 
-  /*scrool bar*/
-  --scrollbar-thin-track: transparent;
-  --scrollbar-auto-track: transparent;
-  --scrollbar-thin-thumb: rgba(var(--accent), 0.18);
-  --scrollbar-auto-thumb: rgba(var(--accent), 0.18);
-  --scrollbar-auto-scrollbar-color-thumb: rgba(var(--accent), 0.18);
-  --scrollbar-auto-scrollbar-color-track: transparent;
+  /* Gradient variables */
+  --gradient-primary: 11, 16, 38; /* DEFAULT: 103,58,183 */
+  --gradient-secondary: 31, 75, 255; /* DEFAULT: 63,81,181 */
+  --gradient-direction: 320deg; /* DEFAULT: 320deg */
+
+  /* Tint variables */
+  --tint-colour: 67, 76, 94; /* Colour of tint | DEAFULT: 255,51,159 */
+  --tint-brightness: 0.2; /* Brightness of --tint-colour | 0 - 1 (decimals allowed) | DEFAULT: 0 */
+
+  /* Other variables */
+  --window-padding: 0px; /* Spacing around the Discord window | DEFAULT: 20px */
+  --window-roundness: 0px; /* Roundness of Discord | DEFAULT: 10px */
+  --scrollbar-colour: rgba(255,255,255,0); /* DEFAULT: rgba(255,255,255,0.05) */
+  --link-colour: #f38ba8; /* DEFAULT: #00b0f4 */
+
+  /*
+    Visit https://fonts.google.com and select one to your liking.
+    Now just follow this tutorial: https://imgur.com/a/CNbw7xC
+  */
+  --font: 'Whitney';
+
+  /* Do not touch */
+  --update-notice-1: none;
+}
+
+/* Voice channel icon in chat */
+div[class*='voiceChannelBadgeWrapper_'] {
+  display: none;
+}
+
+/* Hide profile effects, username effects, avatar decorations, sidebar banners */
+[class*="profileEffects"],
+div[class*='member_']>div[class*='childContainer_']>div[class*='container_'],
+[class*='avatarDecoration'],
+span[class*='glowContainer_'] {
+  display: none;
+}
+
+[class*='effectText_'],
+[class*='fontText_'],
+[class*='dnsFont_'],
+[class*='showEffect_'] {
+  font-family: var(--font-display) !important;
+  letter-spacing: 0px !important;
+  -webkit-text-stroke-width: 0px !important;
+  -webkit-text-stroke-color: var(--white-500) !important;
+  --custom-display-name-styles-main-color: var(--white-500) !important;
+  --custom-display-name-styles-dark-1-color: var(--white-500) !important;
+  --custom-display-name-styles-dark-2-color: var(--white-500) !important;
+  --custom-display-name-styles-wrap: nowrap !important;
+  --custom-display-name-styles-font-opacity: 1 !important;
+  --custom-display-name-styles-gradient-start-color: var(--white-500) !important;
+  --custom-display-name-styles-gradient-end-color: var(--white-500) !important;
+  --custom-display-name-styles-toon-stroke-color: var(--white-500) !important;
+  --custom-display-name-styles-neon-stroke-color: var(--white-500) !important;
+  --custom-display-name-styles-gradient-stops: var(--white-500), var(--white-500) !important; 
+  --custom-display-name-styles-prism-stops: var(--white-500) !important;
+  --custom-display-name-styles-prism-cycle: 100% !important; 
+}
+
+[class*='neon_'] {
+    -webkit-text-stroke-width: 0px !important;
+    -webkit-text-stroke-color: var(--white-500) !important;
+    --custom-neon-shadow-radius: 0em !important;
+    text-shadow: inherit !important;
+}
+
+[class*='toon_'] {
+    --custom-toon-stroke-color: var(--white-500) !important;
+    --custom-toon-stroke-width: 0px !important;
+    --custom-toon-margin: 0px !important;
+    /* I cannot figure out why the font is *slightly* more bold on toon/pop (it's NOT font-weight or text-shadow */
+}
+
+[class*='pop_'] {
+    --custom-pop-stroke-width: 0px !important;
+    --custom-pop-bottom-translate_3d: 0em !important;
+    /* I cannot figure out why the font is *slightly* more bold on toon/pop (it's NOT font-weight or text-shadow */
+}
+
+[class*='gummyLetter_'] {
+    font-family: var(--font-display) !important;
+    color: var(--white-500) !important;
+    animation: none !important;
+    animation-iteration-count: 0;
+}
+
+[class*='animated_'],
+[class*='animated_']>*,
+[class*='animated_']> ::before {
+  animation: none !important;
+  animation-iteration-count: 0;
+}
+
+/* Hide threads & weird useless dot from top bar */
+div[class*='toolbar']>div[aria-label='Threads'],
+div[class*='toolbar']>svg[class*='dot_'] {
+  display: none;
+}
+
+/*Limit Modal v2 to Modal v1 Width of 600px*/
+[class^="layoutContainer"] {
+    max-width: 600px;
+}
+
+.user-profile-modal-v2 {
+    /*Disable Widgets*/
+    [id^="widgets"], [role^="tablist"] {
+        display: none;
+    }
+
+    /*Modal v1-ify Profile Content*/
+    [class*="profileContentInner"] {
+        --custom-modal-v2-padding: var(--space-0);
+        
+        [class^="profile"] {
+            width: 100%;
+            border-radius: var(--radius-lg); 
+            
+            [class*="profileHeaderBanner"] {
+                border-radius: 0 !important;
+                
+                [class^="editButton"] {
+                    inset-inline-end: var(--space-48);
+                }
+            }
+        }
+    }
+
+    /*Fix Profile Frame Scale*/
+    [class^="profileFrame"] {
+        width: 103% !important;
+    }
+}
+
+/*Remove Nitro Upsells from Modal v2*/
+#user-profile-editing-panel {
+    [class^="floatingFooter"], [class^="guildProfileUpsell"], [class^="premium"], [class^="expressiveWrapper"] {
+        display: none;
+    }
+}
+
+/*Chat bubbles*/
+:root {
+  /* border for the messages          *\
+  \* set to none if you dont want any */
+  --cbk-border: none;
+  /* background for the messages             *\
+  \* set to transparent if you dont want any */
+  --cbk-background: #2e344099;
+  /* border radius for the messages  *\
+  \* set to 0px if you dont want any */
+  --cbk-border-radius: 10px;
+}
+
+/*FONT*/
+:root {
+    --font-primary: "Comic Sans MS", cursive !important;
+    --font-display: "Comic Sans MS", cursive !important;
+    --font-headline: "Comic Sans MS", cursive !important;
+    --font-code: "Comic Sans MS", cursive !important;
 }
