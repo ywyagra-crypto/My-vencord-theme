@@ -31,11 +31,6 @@
   --right-brightness: 0.5; /* Members and Now Playing brightness | 0 - 1 (decimals allowed) | DEFAULT: 0 */
   --popout-modal-brightness: 0.5; /* Brightness for popouts and modals | 0 - 1 (decimals allowed) | DEFAULT: 0.75 */
 
-  /* Gradient variables */
-  --gradient-primary: 11, 16, 38; /* DEFAULT: 103,58,183 */
-  --gradient-secondary: 31, 75, 255; /* DEFAULT: 63,81,181 */
-  --gradient-direction: 320deg; /* DEFAULT: 320deg */
-
   /* Tint variables */
   --tint-colour: 67, 76, 94; /* Colour of tint | DEAFULT: 255,51,159 */
   --tint-brightness: 0.2; /* Brightness of --tint-colour | 0 - 1 (decimals allowed) | DEFAULT: 0 */
