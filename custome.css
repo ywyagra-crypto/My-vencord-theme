@@ -4,8 +4,6 @@
  * @description   Custom theme
  */
 
-@import url(https://raw.githubusercontent.com/ywyagra-crypto/My-vencord-theme/refs/heads/main/Assets%20combo.css);
-
 :root {
   /* Background image variables */
   --background-image: url(https://pbs.twimg.com/media/HTuDTUBXQAAUNwP?format=jpg&name=4096x4096); /* Main background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
