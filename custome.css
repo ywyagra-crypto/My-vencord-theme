@@ -4,9 +4,34 @@
  * @description   Custom theme
  */
 
+@import url('https://discordstyles.github.io/FrostedGlass/FrostedGlass.css');
+@import url('https://raw.githubusercontent.com/Just-Me-22/Compact-Server-Shortcut-Buttons/main/compact-server-shortcuts.css');
+@import url('https://raw.githubusercontent.com/NSPC911/vencord-themes/refs/heads/main/ChatBubblesKinda.theme.css');
+@import url('https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-search-button.css');
+@import url('https://raw.githubusercontent.com/nvhhr/discordcss/refs/heads/main/snippets/dashless-extended.theme.css');
+@import url('https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/hideGlobalDiscovery.css');
+@import url('https://nspc911.github.io/vencord-themes/RefreshedSeamlessChatBar.theme.css');
+@import url('https://raw.githubusercontent.com/Mnky313/Discord_Themes/refs/heads/main/Hide_Elements.css');
+@import url('https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css');
+@import url('https://raw.githubusercontent.com/MEWPASCO/dangerous-action-warning/main/danger.css');
+@import url('https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/BubbleUsernames/import.css');
+@import url('https://raw.githubusercontent.com/MEWPASCO/rainbowglow-avatars/main/rainbow.css');
+@import url('https://raw.githubusercontent.com/MEWPASCO/visual-refresh-compact-title-bar-fork/main/desktop.css');
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Composer/ManaComposerSource.css);
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Friend%20List/ManaFriendListSource.css);
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Guild/ManaGuildSource.css);
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Media/ManaMediaSource.css);
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css);
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Panel/ManaPanelSource.css);
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Profile/ManaProfileSource.css);
+@import url(https://davart154.github.io/Themes/Snippets/Mana%20Sidebar%20Notice/ManaSidebarNoticeSource.css);
+@import url(https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Fullscreen%20Layer%20Modal/LayerModalSource.css);
+@import url(https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Plugin%20Icon%20Consistency/IconConsistencySource.css);
+@import url(https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
+
 :root {
   /* Background image variables */
-  --background-image: url(https://pbs.twimg.com/media/HTuDTUBXQAAUNwP?format=jpg&name=4096x4096); /* Main background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --background-image: url(https://pbs.twimg.com/media/HTuDTUBXQAAUNwP?format=jpg&name=4096x4096)); /* Main background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
   --background-image-blur: 0px; /* Blur intensity of --background-image | Must end in px | DEFAULT: 5px */
   --background-image-size: cover; /* Size of the background image | DEFAUT: cover | OPTIONS: cover, contain */
   --background-image-position: center; /* Position of background image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
@@ -87,3 +112,16 @@
 .mainContent__29444[aria-expanded="false"] {
   opacity: 50% !important;
 }
+
+:root {
+  /* border for the messages          *\
+  \* set to none if you dont want any */
+  --cbk-border: none;
+  /* background for the messages             *\
+  \* set to transparent if you dont want any */
+  --cbk-background: #13131380;
+  /* border radius for the messages  *\
+  \* set to 0px if you dont want any */
+  --cbk-border-radius: 20px;
+}
+
