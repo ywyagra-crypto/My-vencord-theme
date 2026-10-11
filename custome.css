@@ -4,19 +4,19 @@
  * @description   Custom theme
  */
 
-@import url('https://discordstyles.github.io/FrostedGlass/FrostedGlass.css');
-@import url('https://raw.githubusercontent.com/Just-Me-22/Compact-Server-Shortcut-Buttons/main/compact-server-shortcuts.css');
-@import url('https://raw.githubusercontent.com/NSPC911/vencord-themes/refs/heads/main/ChatBubblesKinda.theme.css');
-@import url('https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-search-button.css');
-@import url('https://raw.githubusercontent.com/nvhhr/discordcss/refs/heads/main/snippets/dashless-extended.theme.css');
-@import url('https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/hideGlobalDiscovery.css');
-@import url('https://nspc911.github.io/vencord-themes/RefreshedSeamlessChatBar.theme.css');
-@import url('https://raw.githubusercontent.com/Mnky313/Discord_Themes/refs/heads/main/Hide_Elements.css');
-@import url('https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css');
-@import url('https://raw.githubusercontent.com/MEWPASCO/dangerous-action-warning/main/danger.css');
-@import url('https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/BubbleUsernames/import.css');
-@import url('https://raw.githubusercontent.com/MEWPASCO/rainbowglow-avatars/main/rainbow.css');
-@import url('https://raw.githubusercontent.com/MEWPASCO/visual-refresh-compact-title-bar-fork/main/desktop.css');
+@import url(https://discordstyles.github.io/FrostedGlass/FrostedGlass.css);
+@import url(https://raw.githubusercontent.com/Just-Me-22/Compact-Server-Shortcut-Buttons/main/compact-server-shortcuts.css);
+@import url(https://raw.githubusercontent.com/NSPC911/vencord-themes/refs/heads/main/ChatBubblesKinda.theme.css);
+@import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-search-button.css);
+@import url(https://raw.githubusercontent.com/nvhhr/discordcss/refs/heads/main/snippets/dashless-extended.theme.css);
+@import url(https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/hideGlobalDiscovery.css);
+@import url(https://nspc911.github.io/vencord-themes/RefreshedSeamlessChatBar.theme.css);
+@import url(https://raw.githubusercontent.com/Mnky313/Discord_Themes/refs/heads/main/Hide_Elements.css);
+@import url(https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css);
+@import url(https://raw.githubusercontent.com/MEWPASCO/dangerous-action-warning/main/danger.css);
+@import url(https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/BubbleUsernames/import.css);
+@import url(https://raw.githubusercontent.com/MEWPASCO/rainbowglow-avatars/main/rainbow.css);
+@import url(https://raw.githubusercontent.com/MEWPASCO/visual-refresh-compact-title-bar-fork/main/desktop.css);
 @import url(https://davart154.github.io/Themes/Snippets/Mana%20Composer/ManaComposerSource.css);
 @import url(https://davart154.github.io/Themes/Snippets/Mana%20Friend%20List/ManaFriendListSource.css);
 @import url(https://davart154.github.io/Themes/Snippets/Mana%20Guild/ManaGuildSource.css);
