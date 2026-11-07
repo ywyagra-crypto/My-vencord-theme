@@ -3,10 +3,8 @@
  * @version       1.0
  * @description   Custom theme
  */
-
-@import url(https://discordstyles.github.io/FrostedGlass/FrostedGlass.css);
+@import url(https://raw.githubusercontent.com/refact0r/midnight-discord/refs/heads/master/themes/flavors/midnight-background.theme.css);
 @import url(https://raw.githubusercontent.com/Just-Me-22/Compact-Server-Shortcut-Buttons/main/compact-server-shortcuts.css);
-@import url(https://raw.githubusercontent.com/NSPC911/vencord-themes/refs/heads/main/ChatBubblesKinda.theme.css);
 @import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-search-button.css);
 @import url(https://raw.githubusercontent.com/nvhhr/discordcss/refs/heads/main/snippets/dashless-extended.theme.css);
 @import url(https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/hideGlobalDiscovery.css);
@@ -23,133 +21,148 @@
 @import url(https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Media/ManaMediaSource.css);
 @import url(https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Guild/ManaGuildSource.css);
 @import url(https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Friend%20List/ManaFriendListSource.css);
+@import url(https://raw.githubusercontent.com/DiscordStyles/HorizontalServerList/deploy/HorizontalServerList.theme.css);
 @import url(https://raw.githubusercontent.com/MEWPASCO/rolesborder/refs/heads/main/border.css);
-@import url(https://raw.githubusercontent.com/MEWPASCO/rainbowglow-avatars/refs/heads/main/rainbow.css);
+@import url(https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Plugin%20Icon%20Consistency/IconConsistencySource.css);
+@import url(https://raw.githubusercontent.com/NSPC911/vencord-themes/refs/heads/main/ChatBubblesKinda.theme.css);
+@import url(https://raw.githubusercontent.com/NSPC911/vencord-themes/refs/heads/main/MidnightIslandChatStatus.theme.css);
+@import url(https://raw.githubusercontent.com/NSPC911/vencord-themes/refs/heads/main/CSSSnippets.theme.css);
 
-:root { /* frosted glass
-	/*
-	 * Background image variables
-	 */
-	--background-image: url(https://pbs.twimg.com/media/HUODgUpWcAAU_eZ?format=jpg&name=4096x4096); /* Main background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
-	--background-image-blur: 0px; /* Blur intensity of --background-image | Must end in px | DEFAULT: 5px */
-	--background-image-size: cover; /* Size of the background image | DEFAUT: cover | OPTIONS: cover, contain */
-	--background-image-position: center; /* Position of background image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
 
-	/*
-	 * User Popout variables
-	 * This will only affect the user profile (when clicking on a member in the members list)
-	 */
-	--popout-image: var(--background-image); /* Background image for popouts and modals | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
-	--popout-image-blur: 5px; /* Blur intensity of --popout-image | Must end in px | DEFAULT: 5px */
-	--popout-image-size: cover; /* Size of the popout/modal image | DEFAUT: cover | OPTIONS: cover, contain */
-	--popout-image-position: center; /* Position of popout/modal image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
 
-	/*
-	 * Modal & Popout variables
-	 */
-	--overlay-image: var(--background-image); /* Background image for popouts and modals | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
-	--overlay-image-blur: var(--background-image-blur); /* Blur intensity of --overlay-image | Must end in px | DEFAULT: 5px */
-	--overlay-image-size: var(--background-image-size); /* Size of the popout/modal image | DEFAUT: cover | OPTIONS: cover, contain */
-	--overlay-image-position: var(--background-image-position); /* Position of popout/modal image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
+body {
+    /* font options */
+    --font: 'Comfortaa'; /* change to '' for default discord font */
+    --code-font: ''; /* change to '' for default discord font */
+    font-weight: 400; /* normal text font weight. DOES NOT AFFECT BOLD TEXT */
 
-	/*
-	 * Home image variables
-	 */
-	--home-button-image: url('https://discordstyles.github.io/FrostedGlass/discord.svg'); /* Home button image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
-	--home-button-size: 60%; /* Size of the home button image | DEFAUT: cover */
-	--home-button-position: center; /* Position of home button image | DEAFULT: center */
+    /* sizes */
+    --gap: 6px; /* spacing between panels */
+    --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
+    --border-thickness: 1px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
 
-	/*
-	 * Brightness variables
-	 */
-	--serverlist-brightness: 0.8; /* Brightness for serverlist | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
-	--left-brightness: 0.2; /* Channels and DM list brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
-	--middle-brightness: 0.6; /* Chat brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.6 */
-	--right-brightness: 0; /* Members and Now Playing brightness | 0 - 1 (decimals allowed) | DEFAULT: 0 */
-	--overlay-brightness: 0.75; /* Brightness for popouts and modals | 0 - 1 (decimals allowed) | DEFAULT: 0.75 */
+    /* animation/transition options */
+    --animations: on; /* off: disable animations/transitions, on: enable animations/transitions */
+    --list-item-transition: 0.2s ease; /* transition for list items */
+    --dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */
+    --border-hover-transition: 0.2s ease; /* transition for borders when hovered */
 
-	/*
-	 * Gradient variables
-	 */
-	--gradient-primary: 46, 52, 64; /* DEFAULT: 103,58,183 */
-	--gradient-secondary: 76, 86, 106; /* DEFAULT: 63,81,181 */
-	--gradient-direction: 320deg; /* DEFAULT: 320deg */
+    /* top bar options */
+    --top-bar-height: var(--gap); /* height of the top bar (discord default is 36px, old discord style is 24px, var(--gap) recommended if button position is set to titlebar) */
+    --top-bar-button-position: titlebar; /* off: default position, hide: hide buttons completely, titlebar: move inbox button to channel titlebar (will hide title) */
+    --top-bar-title-position: off; /* off: default centered position, hide: hide title completely, left: left align title (like old discord) */
+    --subtle-top-bar-title: on; /* off: default, on: hide the icon and use subtle text color (like old discord) */
 
-	/*
-	 * Tint variables
-	 */
-	--tint-colour: 255, 51, 159; /* Colour of tint | DEAFULT: 255,51,159 */
-	--tint-brightness: 0; /* Brightness of --tint-colour | 0 - 1 (decimals allowed) | DEFAULT: 0 */
+    /* window controls */
+    --custom-window-controls: on; /* off: default window controls, on: custom window controls */
+    --window-control-size: 0px; /* size of custom window controls */
 
-	/*
-	 * Other variables 
-	 */
-	--window-padding: 0px; /* Spacing around the Discord window | DEFAULT: 20px */
-	--window-roundness: 10px; /* Roundness of Discord | DEFAULT: 10px */
-	--scrollbar-colour: rgb(255, 255, 255, 0); /* DEFAULT: rgb(255,255,255,0.05) */
-	--link-colour: #00b0f4; /* DEFAULT: #00b0f4 */
+    /* dms button options */
+    --custom-dms-icon: custom; /* off: use default discord icon, hide: remove icon entirely, custom: use custom icon */
+    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
+    --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
+    --dms-icon-color-before: var(--icon-subtle); /* normal icon color */
+    --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
+    --custom-dms-background: off; /* off to disable, image to use a background image (must set url variable below), color to use a custom color/gradient */
+    --dms-background-image-url: url(''); /* url of the background image */
+    --dms-background-image-size: cover; /* size of the background image (css background-size property) */
+    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2)); /* fixed color/gradient (css background property) */
 
-	/*
-   * Visit https://fonts.google.com and select one to your liking.
-   * Now just follow this tutorial: https://imgur.com/a/CNbw7xC
-   */
-	--font: 'Comfortaa';
+    /* background image options */
+    --background-image: on; /* off: no background image, on: enable background image (must set url variable below) */
+    --background-image-url: url('https://static1.e621.net/data/7c/72/7c72d917c5a02b1e9158a6fa77420905.jpg'); /* url of the background image */
 
-	/*
-	 * ~~DO NOT TOUCH~~
-	 * Removing this will display an annoying update banner.
-	 */
-	--update-notice-1: none;
+    /* transparency/blur options */
+    /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */
+    --transparency-tweaks: on; /* off: no changes, on: remove some elements for better transparency */
+    --remove-bg-layer: off; /* off: no changes, on: remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
+    --panel-blur: on; /* off: no changes, on: blur the background of panels */
+    --blur-amount: 6px; /* amount of blur */
+    --bg-floating: hsla(220, 15%, 13%, 0.9); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
+
+    /* chatbar options */
+    --custom-chatbar: separated; /* off: default chatbar, separated: chatbar separated from chat */
+    --chatbar-height: 56px; /* height of the chatbar (56px by default, 47px to align with user panel, 56px recommended for separated) */
+
+    /* other options */
+    --small-user-panel: on; /* off: default user panel, on: smaller user panel like in old discord */
 }
 
-:root { /* chat bubble
-  /* border for the messages          *\
-  \* set to none if you dont want any */
-  --cbk-border: none;
-  /* background for the messages             *\
-  \* set to transparent if you dont want any */
-  --cbk-background: #13131380;
-  /* border radius for the messages  *\
-  \* set to 0px if you dont want any */
-  --cbk-border-radius: 20px;
-}
+/* color options */
+:root {
+    --colors: on; /* off: discord default colors, on: midnight custom colors */
 
-/* === Collapse Icon Left (by sakgoyal) === */
-.containerDefault__29444 > div {
-  padding-left: 0.5em;
-}
-.containerDefault__29444 > div > div {
-  display: flex;
-  justify-content: start !important;
-  flex-direction: row-reverse !important;
-}
+    /* text colors */
+    --text-0: hsla(220, 15%, 10%, 1); /* text on colored elements */
+    --text-1: hsl(220, 45%, 95%); /* other normally white text */
+    --text-2: hsl(220, 25%, 85%); /* headings and important text */
+    --text-3: hsl(220, 20%, 70%); /* normal text */
+    --text-4: hsl(220, 15%, 50%); /* icon buttons and channels */
+    --text-5: hsl(220, 15%, 35%); /* muted channels/chats and timestamps */
 
-/* === Remove Profile Reactions (by LuSaffi) === */
-.avatarPopover__2d0ab,
-.statusPopover__2d0ab,
-.activityPopover__2d0ab {
-  display: none;
-}
+    /* background and dark colors */
+    --bg-1: hsla(220, 15%, 20%, 0.6); /* dark buttons when clicked */
+    --bg-2: hsla(220, 15%, 16%, 0.6); /* dark buttons */
+    --bg-3: hsla(220, 15%, 13%, 0.6); /* spacing, secondary elements */
+    --bg-4: hsla(220, 15%, 10%, 0.6); /* main background color */
+    --hover: hsla(221, 19%, 40%, 0.1); /* channels and buttons when hovered */
+    --active: hsla(220, 19%, 40%, 0.2); /* channels and buttons when clicked or selected */
+    --active-2: hsla(220, 19%, 40%, 0.3); /* extra state for transparent buttons */
+    --message-hover: hsla(220, 0%, 0%, 0.1); /* messages when hovered */
 
-/* === Unclamp User Bios (by myself) === */
-.descriptionClamp_f5f93a:not(.headerText_faa96b .descriptionClamp_f5f93a) {
-  -webkit-line-clamp: unset;
-  max-height: 400px;
-}
-.viewFullBio_f5f93a {
-  display: none;
-}
+    /* accent colors */
+    --accent-1: var(--blue-1); /* links and other accent text */
+    --accent-2: var(--blue-2); /* small accent elements */
+    --accent-3: var(--blue-3); /* accent buttons */
+    --accent-4: var(--blue-4); /* accent buttons when hovered */
+    --accent-5: var(--blue-5); /* accent buttons when clicked */
+    --accent-new: var(--accent-2); /* stuff that's normally red like mute/deafen buttons */
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); /* background of messages that reply to you */
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); /* background of messages that reply to you when hovered */
 
-/* === Revert App-Tags to BOT (by hanyuko + tweak) === */
-span[class*="botTag"]:not([class*="botTagAi"], [class*="botTagCozy"], [class*="botTagRemix"], [class*="botTagOP"]) span[class*="botText"] {
-  visibility: hidden;
-  position: relative;
-}
-span[class*="botTag"]:not([class*="botTagAi"], [class*="botTagCozy"], [class*="botTagRemix"], [class*="botTagOP"]) span[class*="botText"]::after {
-  content: "BOT";
-  visibility: visible;
-  position: absolute;
-  left: 0;
-  font-size: 0.625rem;
-}
+    /* status indicator colors */
+    --online: var(--green-2); /* change to #40a258 for default */
+    --dnd: var(--red-2); /* change to #d83a41 for default */
+    --idle: var(--yellow-2); /* change to #cc954c for default */
+    --streaming: var(--purple-2); /* change to ##9147ff for default */
+    --offline: var(--text-4); /* change to #82838b for default offline color */
 
+    /* border colors */
+    --border-light: var(--hover); /* general light border color */
+    --border: var(--active); /* general normal border color */
+    --border-hover: var(--active); /* border color of panels when hovered */
+    --button-border: hsl(220, 0%, 100%, 0.1); /* neutral border color of buttons */
+
+    /* base colors */
+    --red-1: oklch(75% 0.12 0);
+    --red-2: oklch(70% 0.12 0);
+    --red-3: oklch(65% 0.12 0);
+    --red-4: oklch(60% 0.12 0);
+    --red-5: oklch(55% 0.12 0);
+
+    --green-1: oklch(75% 0.11 170);
+    --green-2: oklch(70% 0.11 170);
+    --green-3: oklch(65% 0.11 170);
+    --green-4: oklch(60% 0.11 170);
+    --green-5: oklch(55% 0.11 160);
+
+    --blue-1: oklch(75% 0.1 215);
+    --blue-2: oklch(70% 0.1 215);
+    --blue-3: oklch(65% 0.1 215);
+    --blue-4: oklch(60% 0.1 215);
+    --blue-5: oklch(55% 0.1 215);
+
+    --yellow-1: oklch(80% 0.11 90);
+    --yellow-2: oklch(75% 0.11 90);
+    --yellow-3: oklch(70% 0.11 90);
+    --yellow-4: oklch(65% 0.11 90);
+    --yellow-5: oklch(60% 0.11 90);
+
+    --purple-1: oklch(75% 0.11 310);
+    --purple-2: oklch(70% 0.11 310);
+    --purple-3: oklch(65% 0.11 310);
+    --purple-4: oklch(60% 0.11 310);
+    --purple-5: oklch(55% 0.11 310);
+}
